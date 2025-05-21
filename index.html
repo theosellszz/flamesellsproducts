@@ -2,12 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resell Store</title>
   </head>
   <body>
+    <video autoplay muted loop id="bg-video">
+      <source src="/starry.mp4" type="video/mp4" />
+    </video>
     <div id="root"></div>
     <script type="module" src="./src/main.jsx"></script>
+    <style>
+      #bg-video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+        object-fit: cover;
+      }
+    </style>
   </body>
 </html>
 
