@@ -1,25 +1,19 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
-import Products from './pages/Products'
-import Checkout from './pages/Checkout'
-import Login from './pages/Login'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import React from 'react';
+import StarryBackground from './components/StarryBackground';
+import './styles/global.css';
 
-const App = () => {
+function App() {
   return (
-    <>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/checkout" element={<Checkout />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-      <Footer />
-    </>
-  )
+    <div>
+      <StarryBackground />
+
+      <main style={{ position: 'relative', zIndex: 1, padding: '2rem' }}>
+        <h1>Welcome to My Resell Store</h1>
+        <p>Shop premium 1:1 products — AirPods, hoodies, colognes, and more.</p>
+        {/* Add your router or product components here */}
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;
