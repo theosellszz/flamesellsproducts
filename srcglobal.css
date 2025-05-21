@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #000;
+  color: white;
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  width: 2px;
+  height: 2px;
+  animation: twinkle 2s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+}
